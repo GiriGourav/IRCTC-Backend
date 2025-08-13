@@ -1,5 +1,6 @@
 package com.substring.irctc.service;
 
+import com.substring.irctc.dto.PagedResponse;
 import com.substring.irctc.dto.TrainDTO;
 import com.substring.irctc.entity.Train;
 import com.substring.irctc.exceptions.ResourceNotFoundException;
@@ -49,7 +50,7 @@ public class TrainService
         return dto ;
     }
 //    get all
-    public Page<TrainDTO> all(int page, int size, String sortBy, String sortDir)
+    public PagedResponse<TrainDTO> all(int page, int size, String sortBy, String sortDir)
     {
 //        Kuch aisa likhna hai pagination implement  ho jaye
 
@@ -63,7 +64,9 @@ public class TrainService
         Page<Train> trainPage= trainRepository.findAll(pageable);
 //        List of train to list of TrainDTO
 
-        return trainPage.map(train -> modelMapper.map(train,TrainDTO.class));
+       Page<TrainDTO> trainDTOPage= trainPage.map(train -> modelMapper.map(train,TrainDTO.class));
+
+       return PagedResponse.fromPage(trainDTOPage);
     }
 
 //    get single

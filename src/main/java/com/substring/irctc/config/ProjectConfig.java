@@ -1,6 +1,7 @@
 package com.substring.irctc.config;
 
 import com.substring.irctc.dto.ErrorResponse;
+import com.substring.irctc.dto.TrainImageResponse;
 import com.substring.irctc.interceptors.MyCustomInterceptors;
 import com.substring.irctc.interceptors.TimeLoggerInterceptor;
 import org.modelmapper.ModelMapper;
@@ -9,6 +10,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.time.LocalDateTime;
 
 @Configuration
 public class ProjectConfig implements WebMvcConfigurer {
@@ -27,5 +30,11 @@ public class ProjectConfig implements WebMvcConfigurer {
         registry.addInterceptor(timeLoggerInterceptor )
                 .addPathPatterns("/trains/**","/stations/**")
                 .excludePathPatterns("/trains/list");
+    }
+
+    @Bean
+    public TrainImageResponse trainImageResponse() {
+        // Return a default or dummy instance if needed
+        return new TrainImageResponse(0L, "", "", "", 0L, LocalDateTime.now());
     }
 }
