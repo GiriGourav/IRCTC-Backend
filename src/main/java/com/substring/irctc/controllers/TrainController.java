@@ -1,57 +1,57 @@
 package com.substring.irctc.controllers;
 
-import com.substring.irctc.dto.TrainDTO;
-import com.substring.irctc.entity.ImageMetadata;
+import com.substring.irctc.dto.*;
 import com.substring.irctc.entity.Train;
-import com.substring.irctc.service.FileUploadService;
+import com.substring.irctc.entity.TrainImage;
+import com.substring.irctc.service.TrainImageService;
 import com.substring.irctc.service.TrainService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ProblemDetail;
 //import org.springframework.web.ErrorResponse;
 
-import com.substring.irctc.dto.ErrorResponse;
-
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.UUID;
+import java.net.MalformedURLException;
 
 @RestController
 // Controller + ResponseBody = RestController
 @RequestMapping("/trains")
 public class TrainController {
 
-    @Autowired
+
     private TrainService trainService;
-@Autowired
-    private FileUploadService fileUploadService;
-    @RequestMapping("/photo")
-    public ImageMetadata uploadTrainUpload(
-              @RequestParam("file") MultipartFile file)
-            throws IOException {
-//Process the file
-        ImageMetadata imageMetadata=fileUploadService.upload(file);
-//        using Repository save this to database
-return imageMetadata;
+
+
+    private TrainImageService trainImageService;
+
+    public TrainController(TrainService trainService, TrainImageService trainImageService) {
+        this.trainService = trainService;
+        this.trainImageService = trainImageService;
     }
+
+    //    @Autowired
+//    private FileUploadService fileUploadService;
+//    @RequestMapping("/photo")
+//    public ImageMetadata uploadTrainUpload(
+//              @RequestParam("file") MultipartFile file)
+//            throws IOException {
+//Process the file
+//        ImageMetadata imageMetadata=fileUploadService.upload(file);
+//   using Repository save this to database
+//return imageMetadata;
+//    }
 
 //    get all
 //    @RequestMapping(value = "/",method = RequestMethod.GET)
     @GetMapping
-public Page<TrainDTO> all(
+    public PagedResponse<TrainDTO> all(
         @RequestParam(value = "page",defaultValue = "0") int page,
         @RequestParam(value = "size",defaultValue = "10") int size,
         @RequestParam(value = "sortBy",defaultValue = "name") String sortBy,
@@ -139,4 +139,42 @@ public void delete(@PathVariable String trainNo)
 //
 //    }
 
+
+
+    @PostMapping("/{trainNo}/upload-image")
+    public ResponseEntity<?>  uploadTrainImage(
+            @PathVariable String trainNo,
+            @RequestParam ("image") MultipartFile image
+    ) throws IOException {
+
+        String contentType = image.getContentType();
+        System.out.println(contentType);
+
+         if(contentType.toLowerCase().startsWith("image"))
+         {
+             return new ResponseEntity<>(trainImageService.upload(image, trainNo),HttpStatus.CREATED);
+         }
+         else {
+             return new ResponseEntity<>(new ErrorResponse("Image not uploaded", "403", false), HttpStatus.BAD_REQUEST);
+         }
+
+
+    }
+
+//    Serve karne ki API banayenge
+
+
+    @GetMapping("/{trainId}/image")
+    public ResponseEntity<Resource> serverTrainImage(
+            @PathVariable("trainId") String trainId
+    )throws MalformedURLException {
+
+        TrainImageDataWithResource trainImageDataWithResource= trainImageService.loadImageByTrainNo(trainId);
+
+        TrainImage trainImage= trainImageDataWithResource.trainImage();
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(trainImage.getFileType()))
+                .body( trainImageDataWithResource.resource());
+    }
 }
