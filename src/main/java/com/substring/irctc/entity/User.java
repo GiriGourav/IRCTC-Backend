@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.annotation.processing.Generated;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -21,6 +22,7 @@ public class User {
 
     private String name;
 
+    @Column(unique = true)
     private String email;
 
     private String password;
@@ -29,5 +31,7 @@ public class User {
 
     private LocalDateTime createdAt;
 
-    private UserRole userRole=UserRole.ROLE_NORMAL;
+    @OneToMany(mappedBy = "user")
+    private List<Booking> bookings;
+
 }

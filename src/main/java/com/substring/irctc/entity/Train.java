@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 @Entity
 @Table(name="trains")
 @Getter
@@ -41,11 +43,15 @@ public class Train {
    private Station destinationStation;
 
 //train routs
+    @OneToMany(mappedBy = "train")
+    private List<TrainRoute> routes;
 //    schedule
 
+    @OneToMany(mappedBy = "train")
+    private List<TrainSchedule> schedules;
 
-   @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-   private TrainImage trainImage;
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    private TrainImage trainImage;
 
 
 

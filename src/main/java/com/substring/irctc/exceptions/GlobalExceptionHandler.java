@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.lang.reflect.Field;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
@@ -36,6 +37,18 @@ public class GlobalExceptionHandler {
     {
 
         ErrorResponse response= new ErrorResponse( exception.getMessage(),"404",false);
+
+        ResponseEntity <ErrorResponse> responseResponseEntity=new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+        return responseResponseEntity;
+
+    }
+
+    @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
+    public ResponseEntity <ErrorResponse>handleSQLIntegrityConstraintViolationException(SQLIntegrityConstraintViolationException exception)
+    {
+        String message=exception.getMessage().contains("Duplicate entry")?"You are trying to provide field that are all ready in database": exception.getMessage();
+
+        ErrorResponse response= new ErrorResponse( message,"400",false);
 
         ResponseEntity <ErrorResponse> responseResponseEntity=new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
         return responseResponseEntity;

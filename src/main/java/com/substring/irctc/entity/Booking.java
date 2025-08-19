@@ -15,17 +15,25 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String user;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
+    @ManyToOne
+    @JoinColumn(name = "train_schedule_id")
     private TrainSchedule trainSchedule;
 
+    @ManyToOne
+    @JoinColumn(name = "source_station_id")
     private Station sourceStation;
 
+    @ManyToOne
+    @JoinColumn(name = "destination_station_id")
     private Station destinationStation;
 
     private LocalDate journeyDate;
 
-    private BigDecimal totalFair;
+    private BigDecimal totalFare;
 
     @Enumerated(EnumType.STRING)
     private BookingStatus bookingStatus;
@@ -35,6 +43,7 @@ public class Booking {
     @OneToMany(mappedBy ="booking")
     private List<BookingPassenger> passengers;
 
+    @OneToOne(mappedBy = "booking", cascade = CascadeType.ALL)
     private Payment payment;
 
 }

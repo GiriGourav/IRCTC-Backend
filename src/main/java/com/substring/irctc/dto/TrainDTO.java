@@ -1,40 +1,39 @@
 package com.substring.irctc.dto;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class TrainDTO {
 
-    @Id
-    private String trainNo;
 
+    private Long id;
+
+    @NotEmpty(message = "train number is required !!")
+    @Size(min = 3,max = 20,message = "invalid length")
+    @Pattern(regexp = "^\\d+$", message = "Invalid train number, It contain only digits")
+    @Id
+    private String number;
+
+    @Pattern(regexp = "^[A-Za-z][A-Za-z -]*[A-Za-z]$", message = "Invalid train name ")
     private String name;
 
-    private String routeName;
+    private Integer totalDistance;
 
-    public String getTrainNo() {
-        return trainNo;
-    }
+    private StationDto sourceStation;
 
-    public void setTrainNo(String trainNo) {
-        this.trainNo = trainNo;
-    }
+    private StationDto destinationStation;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRouteName() {
-        return routeName;
-    }
-
-    public void setRouteName(String routeName) {
-        this.routeName = routeName;
-    }
 }
