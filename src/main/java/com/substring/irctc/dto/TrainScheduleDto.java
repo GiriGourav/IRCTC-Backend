@@ -2,7 +2,7 @@ package com.substring.irctc.dto;
 
 import lombok.*;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -10,8 +10,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TrainScheduleDto {
-    private Long  Id;
+    private Long  id;
     private Long trainId;
-    private LocalDate runDate;
-    private Integer availableTime;
+    private LocalDateTime runDate;
+    private Integer availableSeats;
 }
