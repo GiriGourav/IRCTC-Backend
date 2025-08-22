@@ -12,7 +12,7 @@ public record TrainImageResponse(
         long size,
         LocalDateTime uploadTime
 ) {
-public static TrainImageResponse from(TrainImage image, String baseUrl, String trainNo)
+public static TrainImageResponse from(TrainImage image, String baseUrl, Long trainNo)
     {
 
         return new TrainImageResponse (
