@@ -1,12 +1,9 @@
 package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.math.BigDecimal;
+
 
 @Entity
 @Table(name = "train_seats")
@@ -29,11 +26,24 @@ public class TrainSeat {
     private CoachType coachType;
 
     private Integer totalSeats;
-
+//    42
     private Integer availableSeats;
 
-//    nextToAssign+no.ofBooking
-    private Integer nextToAssign=1;
+    private double price;
 
-    private BigDecimal price;
+    private Integer trainSeatOrder;
+//1
+    private int seatNumberToAssign;
+
+    public boolean isCoachFull()
+    {
+        return availableSeats<=0;
+    }
+
+    public boolean isSeatAvailable(int seatToBeBooked)
+    {
+        return seatToBeBooked<=availableSeats;
+    }
+
+
 }

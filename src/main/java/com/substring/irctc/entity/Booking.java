@@ -19,6 +19,8 @@ public class Booking {
     @JoinColumn(name = "user_id")
     private User user;
 
+    private String pnr;
+
     @ManyToOne
     @JoinColumn(name = "train_schedule_id")
     private TrainSchedule trainSchedule;
