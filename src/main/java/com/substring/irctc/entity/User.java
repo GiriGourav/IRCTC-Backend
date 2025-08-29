@@ -3,8 +3,8 @@ package com.substring.irctc.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.annotation.processing.Generated;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -33,5 +33,8 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private List<Booking> bookings;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    List<Role> roles=new ArrayList<>();
 
 }

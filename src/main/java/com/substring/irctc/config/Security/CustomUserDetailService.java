@@ -1,6 +1,8 @@
 package com.substring.irctc.config.Security;
 
-import org.springframework.security.core.userdetails.User;
+import com.substring.irctc.entity.User;
+import com.substring.irctc.exceptions.ResourceNotFoundException;
+import com.substring.irctc.repositories.UserRepo;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,21 +18,31 @@ public class CustomUserDetailService implements UserDetailsService {
 //        this.passwordEncoder = passwordEncoder;
 //    }
 
+    private UserRepo userRepo;
+
+    public CustomUserDetailService(UserRepo userRepo) {
+        this.userRepo = userRepo;
+    }
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-       UserDetails user= User.builder()
-                .username("user")
-                .password("{noop}user123")
-                .roles("USER")
-                .build();
+       User  user= userRepo.findByEmail(username).orElseThrow(()->new UsernameNotFoundException("user not found with username "+username));
 
-       if (user.getUsername().equals(username))
-       {
-           return user;
-       }
-       else {
-           throw new UsernameNotFoundException("User not found");
-       }
+       CustomUserDetail customUserDetail=new CustomUserDetail(user);
+       return customUserDetail;
+//       UserDetails user= User.builder()
+//                .username("user")
+//                .password("{noop}user123")
+//                .roles("USER")
+//                .build();
+//
+//       if (user.getUsername().equals(username))
+//       {
+//           return user;
+//       }
+//       else {
+//           throw new UsernameNotFoundException("User not found");
+//       }
     }
 }
