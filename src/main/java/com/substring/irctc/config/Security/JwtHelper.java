@@ -13,8 +13,8 @@ import java.util.Date;
 
 @Component
 public class JwtHelper {
-//    5 MINUTeS
-    private static final long JWT_VALIDITY= 1000*60*5;
+
+    private static final long JWT_VALIDITY= 5*60*1000;      //5 minuets
 
     private final String SECRET= "vcdhavjhfuvkahdvcugdsavckhvcuhcbkhvdahjcvsdkhcvdhcbkhdabcvkdachldajcvdkahxbcjkhadbkhc";
 
