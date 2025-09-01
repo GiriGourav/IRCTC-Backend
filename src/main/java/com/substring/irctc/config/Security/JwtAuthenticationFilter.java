@@ -9,17 +9,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.security.SignatureException;
 
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -41,6 +39,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 //        Bearer 213534udgihgfuydfuhifyfuyhuiugukjnkb
         String authorizationHeader=request.getHeader("Authorization");
+
+        logger.trace("Request to the JWT filter : {}", authorizationHeader);
+
         String username=null;
         String token=null;
 
@@ -52,6 +53,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 token = authorizationHeader.substring(7);
                 username= jwtHelper.getUsernameFromToken(token);
 
+                logger.trace("user name : {}", username);
 
                 if(username !=null && SecurityContextHolder.getContext().getAuthentication()==null)
                 {
@@ -63,29 +65,31 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                        UsernamePasswordAuthenticationToken authentication=new UsernamePasswordAuthenticationToken(userDetails,null,userDetails.getAuthorities());
                        authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                        SecurityContextHolder.getContext().setAuthentication(authentication);
+                       logger.trace("Authentication set in spring security context");
                    }
                 }
 
             }
             catch (IllegalArgumentException ex)
             {
-                System.out.println("Unable to get JWT Token");
-                ex.printStackTrace();
+                 logger.error("Unable to get JWT Token : ()",ex);
+                 ex.printStackTrace();
             }
 
             catch (ExpiredJwtException ex)
             {
-                System.out.println("JWT Token has expired");
-                ex.printStackTrace();
+                 logger.error("JWT Token has expired");
+                 ex.printStackTrace();
             }
 
             catch (MalformedJwtException ex)
             {
-                System.out.println("Invalid JWT Token");
-                ex.printStackTrace();
+                 logger.error("Invalid JWT Token");
+                 ex.printStackTrace();
             }
+
             catch (Exception e) {
-                System.out.println("Invalid Token");
+                logger.error("Invalid Token {}",e);
                 e.printStackTrace();
             }
 
