@@ -48,7 +48,8 @@ public class ProjectConfig implements WebMvcConfigurer {
                                 .version("1.0.0")
                                 .description("This is the IRCTC backend API")
                                 .termsOfService("https://www.irctc.co.in/terms-of-service")
-                                .contact(new io.swagger.v3.oas.models.info.Contact().name("IRCTC Support")
+                                .contact(new io.swagger.v3.oas.models.info.Contact()
+                                        .name("IRCTC Support")
                                         .url("https://www.irctc.co.in/contact-us")
                                         .email("abc@gmail.com"))
                 );
