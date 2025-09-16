@@ -61,7 +61,7 @@ public class AuthController {
                     token,
                     modelMapper.map(user,UserDto.class)
             );
-
+//cookie mai token ko bhej sakte ha
             return new ResponseEntity<>(jwtResponse,org.springframework.http.HttpStatus.OK);
         }
         catch (BadCredentialsException ex)
