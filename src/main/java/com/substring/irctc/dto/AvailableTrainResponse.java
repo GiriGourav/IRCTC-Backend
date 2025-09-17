@@ -4,6 +4,7 @@ import com.substring.irctc.entity.CoachType;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Map;
 
 @Getter
@@ -14,9 +15,10 @@ import java.util.Map;
 public class AvailableTrainResponse {
 
     private Long trainId;;
+    private String trainNumber;;
     private String trainName;
-    private LocalDateTime arrivalTime;
-    private LocalDateTime departureTime;
+    private LocalTime arrivalTime;
+    private LocalTime departureTime;
     private Map<CoachType, Integer> seatsAvailable;;
     private Map<CoachType, Double> priceByCoach;
 }
