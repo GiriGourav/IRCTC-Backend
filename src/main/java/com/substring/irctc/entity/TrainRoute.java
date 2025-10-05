@@ -6,7 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @Entity
@@ -17,29 +16,19 @@ import java.time.LocalTime;
 @NoArgsConstructor
 public class TrainRoute {
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @ManyToOne
     @JoinColumn(name = "train_id")
     private Train train;
-
     @ManyToOne
     @JoinColumn(name = "station_id")
     private Station station;
-
     private Integer stationOrder;
-
     private LocalTime arrivalTime;
-
     private LocalTime departureTime;
-
-    private Integer haltTime;
-
+    private Integer haltMinute;
     private Integer distanceFromSource;
-
 
 }

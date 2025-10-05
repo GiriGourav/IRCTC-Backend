@@ -52,7 +52,7 @@ public class TrainScheduleServiceImpl implements TrainScheduleService {
         trainSchedule.setTrain(train);
         trainSchedule.setAvailableSeats(trainScheduleDto.getAvailableSeats());
         trainSchedule.setRunDate(trainScheduleDto.getRunDate());
-        TrainSchedule updatedSchedule= trainScheduleRepository.save(trainSchedule);
+        TrainSchedule updatedSchedule = trainScheduleRepository.save(trainSchedule);
         return modelMapper.map(updatedSchedule,TrainScheduleDto.class);
     }
 }

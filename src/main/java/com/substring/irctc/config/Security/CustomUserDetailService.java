@@ -1,12 +1,10 @@
 package com.substring.irctc.config.Security;
 
 import com.substring.irctc.entity.User;
-import com.substring.irctc.exceptions.ResourceNotFoundException;
 import com.substring.irctc.repositories.UserRepo;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service

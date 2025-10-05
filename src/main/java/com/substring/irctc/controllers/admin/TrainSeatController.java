@@ -2,6 +2,7 @@ package com.substring.irctc.controllers.admin;
 
 import com.substring.irctc.dto.TrainSeatDto;
 import com.substring.irctc.service.TrainSeatService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +16,8 @@ public class TrainSeatController {
     public TrainSeatController(TrainSeatService trainSeatService) {
         this.trainSeatService = trainSeatService;
     }
-
+@Operation(summary = "Create a seat",
+description = "This API is used to create a seat")
     @PostMapping
     public ResponseEntity<TrainSeatDto> createSeat(
             @RequestBody TrainSeatDto trainSeatDto){
@@ -24,6 +26,8 @@ public class TrainSeatController {
     }
 
 //    get dibba of train schedule
+    @Operation(summary = "Get seats by schedule id",
+description = "This API is used to get seats by schedule id")
     @GetMapping("/schedule/{scheduleId}")
     public ResponseEntity<List<TrainSeatDto>> getSeatsByScheduleId(
             @PathVariable Long scheduleId
@@ -32,7 +36,8 @@ public class TrainSeatController {
 
        return ResponseEntity.ok(seats);
     }
-
+@Operation(summary = "Delete a seat",
+description = "This API is used to delete a seat")
     @DeleteMapping("/{seatId}")
     public ResponseEntity<Void> deleteSeat(
             @PathVariable Long seatId
@@ -41,6 +46,8 @@ public class TrainSeatController {
         return ResponseEntity.noContent().build();
     }
 
+    @Operation(summary = "Update a seat",
+description = "This API is used to update a seat")
     @PutMapping("/{seatId}")
     public ResponseEntity<TrainSeatDto> updateSeat(
             @PathVariable Long seatId,

@@ -2,6 +2,7 @@ package com.substring.irctc.controllers.admin;
 
 import com.substring.irctc.dto.TrainScheduleDto;
 import com.substring.irctc.service.TrainScheduleService;
+import io.swagger.v3.oas.annotations.Parameter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +31,7 @@ public class TrainScheduleController {
 
     @GetMapping("/train/{trainId}")
     public List<TrainScheduleDto> getTrainScheduleByTrainId(
+            @Parameter(description = "Train id to get the details of train",required = true)
             @PathVariable Long trainId
     ){
         return trainScheduleService.getTrainScheduleByTrainId(trainId);

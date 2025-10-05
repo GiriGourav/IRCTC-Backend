@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class TrainRouteServiceImpl implements TrainRouteService{
+
     private TrainRepository trainRepository;
     private StationRepo stationRepo;
     private ModelMapper modelMapper;
@@ -33,13 +34,14 @@ public class TrainRouteServiceImpl implements TrainRouteService{
 
         Train train=this.trainRepository.findById(dto.getTrain().getId()).orElseThrow(()-> new ResourceNotFoundException("Train not found with Id:"+dto.getTrain().getId()));
         Station station=this.stationRepo.findById(dto.getStation().getId()).orElseThrow(()->new ResourceNotFoundException("Station not found with Id:"+dto.getStation().getId()));
+//convert DTO to Entity
 
         TrainRoute trainRoute=modelMapper.map(dto, TrainRoute.class);
         trainRoute.setTrain(train);
         trainRoute.setStation(station);
-
+//Save the TrainRoute Entity
         TrainRoute savedTrainRoute= trainRouteRepository.save(trainRoute);
-
+//convert saved Entity back to DTO
         TrainRouteDto savedtrainRouteDto=modelMapper.map(savedTrainRoute,TrainRouteDto.class);
         return savedtrainRouteDto;
     }
@@ -66,7 +68,7 @@ public class TrainRouteServiceImpl implements TrainRouteService{
         existingRoute.setStationOrder(dto.getStationOrder());
         existingRoute.setArrivalTime(dto.getArrivalTime());
         existingRoute.setDepartureTime(dto.getDepartureTime());
-        existingRoute.setHaltTime(dto.getHaltMinutes());
+        existingRoute.setHaltMinute(dto.getHaltMinute());
         existingRoute.setDistanceFromSource(dto.getDistanceFromSource());
 
         TrainRoute updatedRoute=trainRouteRepository.save(existingRoute);

@@ -3,6 +3,9 @@ package com.substring.irctc.config;
 import com.substring.irctc.dto.TrainImageResponse;
 import com.substring.irctc.interceptors.MyCustomInterceptors;
 import com.substring.irctc.interceptors.TimeLoggerInterceptor;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import org.modelmapper.ModelMapper;
@@ -39,19 +42,4 @@ public class ProjectConfig implements WebMvcConfigurer {
         return new TrainImageResponse(0L, "", "", "", 0L, LocalDateTime.now());
     }
 
-    @Bean
-    public OpenAPI openAPI(){
-        return new OpenAPI()
-                .info(
-                        new Info()
-                                .title("IRCTC-API")
-                                .version("1.0.0")
-                                .description("This is the IRCTC backend API")
-                                .termsOfService("https://www.irctc.co.in/terms-of-service")
-                                .contact(new io.swagger.v3.oas.models.info.Contact()
-                                        .name("IRCTC Support")
-                                        .url("https://www.irctc.co.in/contact-us")
-                                        .email("abc@gmail.com"))
-                );
-    }
 }

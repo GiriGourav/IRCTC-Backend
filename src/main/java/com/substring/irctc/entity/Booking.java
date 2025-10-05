@@ -1,7 +1,6 @@
 package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Future;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

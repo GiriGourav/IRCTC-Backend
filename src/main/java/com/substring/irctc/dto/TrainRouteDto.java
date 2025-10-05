@@ -17,7 +17,7 @@ public class TrainRouteDto {
     private Integer stationOrder;
     private LocalTime arrivalTime;
     private LocalTime departureTime;
-    private Integer haltMinutes;
+    private Integer haltMinute;
     private Integer distanceFromSource;
 
 

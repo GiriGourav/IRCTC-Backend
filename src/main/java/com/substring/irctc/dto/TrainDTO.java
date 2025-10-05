@@ -1,7 +1,6 @@
 package com.substring.irctc.dto;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
@@ -19,8 +18,8 @@ public class TrainDTO {
 
 
     private Long id;
-
     @NotEmpty(message = "train number is required !!")
+
     @Size(min = 3,max = 20,message = "invalid length")
     @Pattern(regexp = "^\\d+$", message = "Invalid train number, It contain only digits")
     @Id
