@@ -67,7 +67,7 @@ public class TrainController {
             @PathVariable("id") Long id,
             @RequestBody TrainDTO trainDTO
     ){
-        return new ResponseEntity<>(trainService.updateTrainById(id,trainDTO),HttpStatus.OK);
+        return new ResponseEntity<>(trainService.updateTrain(id,trainDTO),HttpStatus.OK);
     }
 
 

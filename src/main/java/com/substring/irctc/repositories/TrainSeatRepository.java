@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface TrainSeatRepository extends JpaRepository<TrainSeat, Long> {
     @Query("SELECT ts FROM TrainSeat ts WHERE ts.trainSchedule.id = ?1 order by ts.trainSeatOrder")
-    List<TrainSeat> findByTrainScheduleId(Long TrainScheduleId);
+    List<TrainSeat> findByTrainScheduleId(Long trainScheduleId);
 
 }

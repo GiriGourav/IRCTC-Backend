@@ -1,6 +1,5 @@
 package com.substring.irctc.dto;
 
-import com.substring.irctc.entity.Train;
 import lombok.*;
 
 import java.time.LocalTime;

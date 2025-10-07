@@ -1,0 +1,225 @@
+17:11:57.396 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+17:11:57.486 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 52605 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+17:11:57.488 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+17:11:58.858 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:11:58.928 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 8 JPA repository interfaces.
+17:11:59.849 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+17:11:59.861 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:11:59.864 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:11:59.864 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+17:11:59.921 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:11:59.925 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2373 ms
+17:12:00.108 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:12:00.165 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+17:12:00.217 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+17:12:00.489 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:12:00.515 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:12:00.518 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:12:00.928 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c9e74f3
+17:12:00.929 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:12:00.983 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17:12:00.983 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+17:12:00.996 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+17:12:03.050 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17:12:03.312 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:12:03.944 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+17:12:04.094 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+17:12:04.202 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+17:12:05.480 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:12:06.530 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:12:06.548 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+17:12:06.564 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 10.407 seconds (process running for 11.703)
+17:12:06.567 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+17:12:06.567 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+17:12:06.567 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+17:12:25.150 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:12:25.159 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:12:25.205 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 42 ms
+17:12:25.360 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:12:30.825 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s790ms), soft-evicting connections from pool.
+17:13:38.619 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:13:38.682 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - user name : renu@gmail.com
+17:13:38.718 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:13:38.725 WARN  [http-nio-8080-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+17:14:28.031 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:14:28.043 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - user name : renu@gmail.com
+17:14:28.068 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:14:28.103 INFO  [http-nio-8080-exec-6] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteRoute
+17:14:28.306 INFO  [http-nio-8080-exec-6] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteRoute
+17:15:20.299 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:15:20.312 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+17:15:20.486 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+17:16:38.715 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:16:38.734 WARN  [http-nio-8080-exec-10] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+17:16:44.499 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:16:44.513 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - user name : renu@gmail.com
+17:16:44.550 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:16:44.553 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteRoute
+17:17:17.893 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1NjkzMDA1NywiZXhwIjoxNzU2OTMwMzU3fQ.fFD8be-rbe6LnxkcY8LWru00I3cyyihjDvKvDOTetWrPl0hb4yJiSzgCVUwimjEqw81jyygatg_Q6hPIvuGzWQ
+17:17:17.910 ERROR [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:17:17.924 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution getAllTrains
+17:17:17.967 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - After Method Execution getAllTrains
+17:17:31.155 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MjMzNTAxLCJleHAiOjE3NTYyMzM4MDF9.e-yk6v49qEbZVtU2vQ-V8qS7ld_ITBL1djXciT0zIl0y1qVlpWRh4HuXXBVXwBbBLIQgJiN7FDVrRtLaohBpMA
+17:17:31.162 ERROR [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:17:31.217 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - Before Method Execution listStations
+17:17:31.258 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - After Method Execution listStations
+17:17:51.965 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:17:51.969 WARN  [http-nio-8080-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+17:18:05.477 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:18:05.486 WARN  [http-nio-8080-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+17:20:25.397 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ0NDUyLCJleHAiOjE3NTg1NDQ3NTJ9.yC9Kb5yyMtyxb8hYqW2wdPJ59v3I4_Y5q0SnJvSYI8vAt5lz1W2E_5qcNirkVUTIXV99ungjGxUD2bGkzKsNtA
+17:20:25.404 ERROR [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:20:25.416 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+17:20:25.499 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+17:22:11.702 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:22:11.711 ERROR [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:22:11.725 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+17:22:11.795 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+17:22:58.210 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:22:58.221 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteTrainScheduleByTrainId
+17:23:13.379 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:23:13.386 WARN  [http-nio-8080-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+17:23:22.673 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:23:22.679 ERROR [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:23:22.682 WARN  [http-nio-8080-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+17:23:24.341 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:23:24.344 ERROR [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:23:24.348 WARN  [http-nio-8080-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+17:23:34.108 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:23:53.698 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:24:08.559 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:24:08.572 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:24:08.600 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:24:08.602 WARN  [http-nio-8080-exec-8] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+17:24:18.543 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:24:18.550 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:24:18.575 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:24:18.578 INFO  [http-nio-8080-exec-9] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteTrainScheduleByTrainId
+17:25:10.262 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:25:10.268 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:25:10.295 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:25:10.298 INFO  [http-nio-8080-exec-10] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+17:25:10.306 INFO  [http-nio-8080-exec-10] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+17:25:16.399 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:25:16.404 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:25:16.430 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:25:16.433 WARN  [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+17:25:43.901 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:25:43.906 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:25:43.925 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:25:43.930 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+17:25:43.938 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+17:25:56.395 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:25:56.405 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:25:56.429 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:25:56.433 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteTrainScheduleByTrainId
+17:25:57.130 WARN  [http-nio-8080-exec-3] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1451, SQLState: 23000
+17:25:57.131 ERROR [http-nio-8080-exec-3] o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`backendx_irctc`.`train_seats`, CONSTRAINT `FKis9813cg7o6889wm2cx27jfmf` FOREIGN KEY (`train_schedule_id`) REFERENCES `train_schedule` (`id`))
+17:26:20.173 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:26:20.183 ERROR [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:26:20.195 INFO  [http-nio-8080-exec-4] c.s.irctc.aspects.LoggingAspect - Before Method Execution getSeatInfoByTrainScheduleId
+17:26:20.300 INFO  [http-nio-8080-exec-4] c.s.irctc.aspects.LoggingAspect - After Method Execution getSeatInfoByTrainScheduleId
+17:26:33.281 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:26:33.289 ERROR [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:26:33.299 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteSeatInfo
+17:26:39.678 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:26:39.689 ERROR [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:26:39.697 INFO  [http-nio-8080-exec-6] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteSeatInfo
+17:26:39.733 INFO  [http-nio-8080-exec-6] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteSeatInfo
+17:26:48.180 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:26:48.186 ERROR [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:26:48.197 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - Before Method Execution getSeatInfoByTrainScheduleId
+17:26:48.220 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - After Method Execution getSeatInfoByTrainScheduleId
+17:27:00.700 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:27:00.705 ERROR [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:27:00.711 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteSeatInfo
+17:27:00.730 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteSeatInfo
+17:27:05.338 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:27:05.341 ERROR [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:27:05.344 INFO  [http-nio-8080-exec-9] c.s.irctc.aspects.LoggingAspect - Before Method Execution getSeatInfoByTrainScheduleId
+17:27:05.353 INFO  [http-nio-8080-exec-9] c.s.irctc.aspects.LoggingAspect - After Method Execution getSeatInfoByTrainScheduleId
+17:27:12.728 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:27:12.736 ERROR [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:27:12.780 INFO  [http-nio-8080-exec-10] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteSeatInfo
+17:27:12.812 INFO  [http-nio-8080-exec-10] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteSeatInfo
+17:27:17.977 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:27:17.988 ERROR [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:27:17.998 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution getSeatInfoByTrainScheduleId
+17:27:18.009 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - After Method Execution getSeatInfoByTrainScheduleId
+17:27:29.832 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:27:29.839 ERROR [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:27:29.845 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteRoute
+17:27:43.681 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:27:43.692 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+17:27:43.727 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+17:27:54.326 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODYyNzc0NywiZXhwIjoxNzU4NjI4MDQ3fQ.hcidOtV4XXvXs_VWHmtEi5E6qIL5lp4cRV1ARyFslBDDKE--rG4JEeFb4BwIUlV1z-dzoQkdHWscpQUI1CcSMg
+17:27:54.338 ERROR [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:27:54.345 INFO  [http-nio-8080-exec-4] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteRoute
+17:27:54.364 INFO  [http-nio-8080-exec-4] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteRoute
+17:27:58.943 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:27:58.949 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+17:27:58.971 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+17:28:09.392 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:28:09.398 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:28:09.424 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:28:09.426 INFO  [http-nio-8080-exec-6] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteTrainScheduleByTrainId
+17:28:09.442 INFO  [http-nio-8080-exec-6] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteTrainScheduleByTrainId
+17:28:15.626 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:28:15.633 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:28:15.679 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:28:15.684 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+17:28:15.695 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+17:28:24.330 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:28:24.343 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:28:24.369 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:28:24.371 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteTrainScheduleByTrainId
+17:28:24.385 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteTrainScheduleByTrainId
+17:28:29.018 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:28:29.027 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:28:29.060 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:28:29.068 INFO  [http-nio-8080-exec-9] c.s.irctc.aspects.LoggingAspect - Before Method Execution deleteTrainScheduleByTrainId
+17:28:29.081 INFO  [http-nio-8080-exec-9] c.s.irctc.aspects.LoggingAspect - After Method Execution deleteTrainScheduleByTrainId
+17:28:32.206 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NjI4NDMzLCJleHAiOjE3NTg2Mjg3MzN9.u5cup9Es3BgMlOTdIh40K2ByT6-AWRvzeRh-OQQ2YVJp852HlZ4arxhu74h5IqOBk9MAge5w4kf3dbPu-zWyiQ
+17:28:32.208 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+17:28:32.217 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+17:28:32.218 INFO  [http-nio-8080-exec-10] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+17:28:32.219 INFO  [http-nio-8080-exec-10] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+17:28:40.214 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MzM3NzAxLCJleHAiOjE3NTYzMzgwMDF9._rULZ2GeQvf3g-nt3kYchSVMENC_4UqIvnzpWYkBYIqHcsWF4ABz8NIPnIji9ybObypLAiVlx1q0WWxMk7b5zQ
+17:28:40.226 ERROR [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:28:40.234 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution getSeatInfoByTrainScheduleId
+17:28:40.243 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - After Method Execution getSeatInfoByTrainScheduleId
+17:28:47.025 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:28:47.035 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+17:28:47.063 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+17:28:56.307 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MjMzNTAxLCJleHAiOjE3NTYyMzM4MDF9.e-yk6v49qEbZVtU2vQ-V8qS7ld_ITBL1djXciT0zIl0y1qVlpWRh4HuXXBVXwBbBLIQgJiN7FDVrRtLaohBpMA
+17:28:56.313 ERROR [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+17:28:56.325 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - Before Method Execution listStations
+17:28:56.352 INFO  [http-nio-8080-exec-3] c.s.irctc.aspects.LoggingAspect - After Method Execution listStations
+17:43:54.481 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s438ms).
+18:02:30.552 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m36s40ms).
+18:25:15.445 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m44s893ms).
+18:26:46.672 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s225ms).
+18:27:57.825 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s155ms).
+18:58:51.513 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m53s688ms).
+19:16:17.608 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m26s92ms).
+19:35:01.682 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s920ms).
+20:20:30.919 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m26s638ms).
+22:06:26.428 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h26m25s265ms).
+23:07:33.511 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m7s37ms).
+23:09:18.313 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:18.868 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:18.877 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:18.883 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:18.883 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:18.884 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:19.532 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:19.592 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+23:09:49.424 INFO  [http-nio-8080-exec-2] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 29767 ms
+23:59:34.794 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s799ms), soft-evicting connections from pool.

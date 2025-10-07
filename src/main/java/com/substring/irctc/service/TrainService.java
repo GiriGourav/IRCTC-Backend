@@ -18,8 +18,8 @@ public interface TrainService {
 //    get train by train id
     public TrainDTO getTrainById(Long id);
 
-//    update train
-    public TrainDTO updateTrainById(Long id, TrainDTO trainDTO);
+    //update train
+    public TrainDTO updateTrain(Long id, TrainDTO trainDTO);
 
 //    Delete Train
     public void deleteTrain(Long id);

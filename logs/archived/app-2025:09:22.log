@@ -1,0 +1,406 @@
+04:20:07.261 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+04:20:07.323 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 20114 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+04:20:07.324 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+04:20:08.364 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04:20:08.497 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 8 JPA repository interfaces.
+04:20:09.736 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+04:20:09.785 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+04:20:09.799 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+04:20:09.800 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+04:20:09.913 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+04:20:09.915 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2545 ms
+04:20:10.279 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+04:20:10.335 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+04:20:10.374 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+04:20:10.612 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+04:20:10.634 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+04:20:10.637 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+04:20:11.056 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@127d2aee
+04:20:11.057 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+04:20:11.121 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:20:11.124 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:20:11.147 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+04:20:12.133 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+04:20:12.278 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04:20:12.633 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+04:20:12.741 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+04:20:12.831 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+04:20:13.643 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:20:14.420 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+04:20:14.426 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+04:20:14.430 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+04:20:14.432 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+04:20:14.438 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+04:20:14.452 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+04:20:14.465 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+15:05:17.709 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+15:05:17.787 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 42127 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+15:05:17.788 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+15:05:18.657 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:05:18.715 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+15:05:19.845 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+15:05:19.869 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:05:19.873 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:05:19.874 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+15:05:19.992 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:05:19.994 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2151 ms
+15:05:20.310 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:05:20.356 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+15:05:20.385 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+15:05:20.615 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:05:20.637 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:05:20.640 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:05:21.005 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e55eeb9
+15:05:21.006 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:05:21.061 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:05:21.062 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+15:05:21.074 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:05:23.183 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:05:23.425 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:05:24.177 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+15:05:24.748 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+15:05:24.997 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:05:26.064 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:05:27.019 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:05:27.037 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+15:05:27.044 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:05:27.048 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:05:27.073 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:05:27.108 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+15:05:27.131 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+15:24:06.504 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+15:24:06.572 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 42500 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+15:24:06.573 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+15:24:07.430 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:24:07.486 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+15:24:08.153 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+15:24:08.169 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:24:08.172 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:24:08.172 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+15:24:08.248 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:24:08.249 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1614 ms
+15:24:08.460 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:24:08.502 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+15:24:08.530 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+15:24:08.742 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:24:08.762 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:24:08.765 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:24:09.125 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@127d2aee
+15:24:09.127 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:24:09.182 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:24:09.182 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+15:24:09.196 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:24:10.079 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:24:10.226 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:24:10.555 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+15:24:10.649 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+15:24:10.739 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:24:11.504 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:24:12.139 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:24:12.151 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+15:24:12.163 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 6.383 seconds (process running for 7.212)
+15:24:12.166 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+15:24:12.166 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+15:24:12.166 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+16:36:04.627 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m54s636ms).
+16:47:59.785 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m13s50ms).
+17:13:58.879 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m29s69ms).
+17:25:32.315 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m33s435ms).
+17:39:28.949 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m56s635ms).
+17:42:42.473 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s507ms).
+17:46:47.039 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:46:47.045 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:46:47.097 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 50 ms
+17:46:47.152 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:47.343 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:47.364 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:47.364 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:47.365 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:47.392 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:48.124 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:48.127 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:48.250 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+17:46:48.963 INFO  [http-nio-8080-exec-9] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 665 ms
+18:04:02.471 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4MTk2NDgwLCJleHAiOjE3NTgxOTY3ODB9.HQsAGySTEhOD1tsYGYGApvwR0wLokwAXwwBopzelFMskv2D0grBtEYFDDi88NES6RPRK1AEs9O9F1LmeAb0z8A
+18:04:02.853 ERROR [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+18:04:11.524 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:04:31.896 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ0NDUyLCJleHAiOjE3NTg1NDQ3NTJ9.yC9Kb5yyMtyxb8hYqW2wdPJ59v3I4_Y5q0SnJvSYI8vAt5lz1W2E_5qcNirkVUTIXV99ungjGxUD2bGkzKsNtA
+18:04:31.913 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+18:04:31.938 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:04:31.966 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - Before Method Execution userTrainSearch
+18:04:32.031 INFO  [http-nio-8080-exec-7] c.s.irctc.aspects.LoggingAspect - After Method Execution userTrainSearch
+18:06:44.725 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:06:44.744 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:06:44.768 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:06:44.784 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:06:44.795 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:06:59.749 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+18:07:00.222 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 44456 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+18:07:00.224 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+18:07:02.030 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:07:02.140 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 8 JPA repository interfaces.
+18:07:03.059 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:07:03.091 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:07:03.094 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:07:03.094 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+18:07:03.162 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:07:03.163 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2844 ms
+18:07:03.374 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:07:03.426 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+18:07:03.470 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:07:03.729 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:07:03.754 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:07:03.757 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+18:07:04.184 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28c7fd9d
+18:07:04.186 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:07:04.244 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:07:04.245 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:07:04.258 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:07:05.268 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:07:05.429 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:07:05.786 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+18:07:05.896 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+18:07:06.062 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:07:06.919 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:07:07.702 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:07:07.718 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:07:07.732 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 8.816 seconds (process running for 11.06)
+18:07:07.735 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:07:07.735 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:07:07.735 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:07:14.460 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:07:14.461 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:07:14.467 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+18:07:14.522 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ0NDUyLCJleHAiOjE3NTg1NDQ3NTJ9.yC9Kb5yyMtyxb8hYqW2wdPJ59v3I4_Y5q0SnJvSYI8vAt5lz1W2E_5qcNirkVUTIXV99ungjGxUD2bGkzKsNtA
+18:07:14.663 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+18:07:14.842 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:07:14.981 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution userTrainSearch
+18:07:41.346 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - After Method Execution userTrainSearch
+18:08:16.753 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:08:16.771 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:08:16.788 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:08:16.797 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:08:16.813 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:08:23.589 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+18:08:23.650 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 44503 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+18:08:23.651 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+18:08:24.545 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:08:24.612 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 8 JPA repository interfaces.
+18:08:25.533 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:08:25.545 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:08:25.547 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:08:25.547 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+18:08:25.598 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:08:25.599 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1897 ms
+18:08:25.862 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:08:25.925 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+18:08:25.956 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:08:26.339 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:08:26.373 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:08:26.378 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+18:08:27.001 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bde9a22
+18:08:27.004 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:08:27.099 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:08:27.100 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:08:27.128 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:08:29.038 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:08:29.242 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:08:29.674 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+18:08:29.791 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+18:08:29.949 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:08:31.309 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:08:32.115 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:08:32.135 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:08:32.153 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 9.111 seconds (process running for 12.558)
+18:08:32.158 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:08:32.158 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:08:32.158 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:08:37.076 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:08:37.077 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:08:37.087 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+18:08:37.120 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ0NDUyLCJleHAiOjE3NTg1NDQ3NTJ9.yC9Kb5yyMtyxb8hYqW2wdPJ59v3I4_Y5q0SnJvSYI8vAt5lz1W2E_5qcNirkVUTIXV99ungjGxUD2bGkzKsNtA
+18:08:37.384 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+18:08:37.440 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:08:37.517 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution userTrainSearch
+18:09:22.325 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s206ms).
+18:12:21.718 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m59s403ms).
+18:12:21.748 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - After Method Execution userTrainSearch
+18:12:21.778 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:12:21.824 INFO  [http-nio-8080-exec-4] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+18:12:22.290 INFO  [http-nio-8080-exec-4] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+18:14:03.593 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+18:14:03.623 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+18:14:03.638 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:14:03.655 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:14:03.667 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:14:12.268 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+18:14:12.318 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 44610 (/Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/Spring Boot Durgesh/mvc/irctc-backend)
+18:14:12.319 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+18:14:13.015 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:14:13.070 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+18:14:13.665 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+18:14:13.674 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:14:13.676 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:14:13.676 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+18:14:13.715 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:14:13.716 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1360 ms
+18:14:13.863 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:14:13.908 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+18:14:13.939 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+18:14:14.142 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:14:14.164 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:14:14.166 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+18:14:14.518 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7074da1d
+18:14:14.519 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:14:14.569 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+18:14:14.569 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+18:14:14.582 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:14:15.399 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+18:14:15.541 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:14:15.877 DEBUG [main] c.s.i.c.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+18:14:15.979 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+18:14:16.074 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:14:16.992 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:14:17.666 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:14:17.676 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+18:14:17.687 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 6.529 seconds (process running for 7.499)
+18:14:17.690 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:14:17.690 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:14:17.690 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+18:16:19.978 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:16:19.981 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:16:20.002 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+18:16:20.083 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ0NDUyLCJleHAiOjE3NTg1NDQ3NTJ9.yC9Kb5yyMtyxb8hYqW2wdPJ59v3I4_Y5q0SnJvSYI8vAt5lz1W2E_5qcNirkVUTIXV99ungjGxUD2bGkzKsNtA
+18:16:20.606 ERROR [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+18:16:20.840 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution getTrainScheduleByTrainId
+18:16:21.251 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - After Method Execution getTrainScheduleByTrainId
+18:16:48.554 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ0NDUyLCJleHAiOjE3NTg1NDQ3NTJ9.yC9Kb5yyMtyxb8hYqW2wdPJ59v3I4_Y5q0SnJvSYI8vAt5lz1W2E_5qcNirkVUTIXV99ungjGxUD2bGkzKsNtA
+18:16:48.565 ERROR [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+18:17:08.314 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:17:21.096 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ1MjI4LCJleHAiOjE3NTg1NDU1Mjh9.tP_6id6K2ZzWYSWT8jIkJxJ4yZdxEwg_8tuSqfa_QElw-7MWxnYmXU5vDDJ4qEXuXFJWI1ZL9xxBe_e7WkZYOQ
+18:17:21.109 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+18:17:21.130 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:17:21.155 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - Before Method Execution userTrainSearch
+18:17:21.169 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - After Method Execution userTrainSearch
+18:18:44.049 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzU2MjMzNTAxLCJleHAiOjE3NTYyMzM4MDF9.e-yk6v49qEbZVtU2vQ-V8qS7ld_ITBL1djXciT0zIl0y1qVlpWRh4HuXXBVXwBbBLIQgJiN7FDVrRtLaohBpMA
+18:18:44.058 ERROR [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+18:18:44.128 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - Before Method Execution listStations
+18:18:44.230 INFO  [http-nio-8080-exec-8] c.s.irctc.aspects.LoggingAspect - After Method Execution listStations
+18:28:56.922 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:28:57.079 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution updateTrainSchedule
+18:28:57.459 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - After Method Execution updateTrainSchedule
+18:29:30.214 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:29:30.232 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+18:29:30.358 INFO  [http-nio-8080-exec-1] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+18:31:20.880 TRACE [http-nio-8080-exec-5] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:31:20.888 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - Before Method Execution getRoutesByTrain
+18:31:21.015 INFO  [http-nio-8080-exec-5] c.s.irctc.aspects.LoggingAspect - After Method Execution getRoutesByTrain
+18:31:30.616 TRACE [http-nio-8080-exec-6] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:31:30.633 WARN  [http-nio-8080-exec-6] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+18:31:41.135 TRACE [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ1MjI4LCJleHAiOjE3NTg1NDU1Mjh9.tP_6id6K2ZzWYSWT8jIkJxJ4yZdxEwg_8tuSqfa_QElw-7MWxnYmXU5vDDJ4qEXuXFJWI1ZL9xxBe_e7WkZYOQ
+18:31:41.185 ERROR [http-nio-8080-exec-7] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+18:31:41.211 WARN  [http-nio-8080-exec-7] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+18:31:45.643 TRACE [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ1MjI4LCJleHAiOjE3NTg1NDU1Mjh9.tP_6id6K2ZzWYSWT8jIkJxJ4yZdxEwg_8tuSqfa_QElw-7MWxnYmXU5vDDJ4qEXuXFJWI1ZL9xxBe_e7WkZYOQ
+18:31:45.649 ERROR [http-nio-8080-exec-8] c.s.i.c.S.JwtAuthenticationFilter - JWT Token has expired
+18:31:45.655 WARN  [http-nio-8080-exec-8] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+18:31:50.588 TRACE [http-nio-8080-exec-9] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:32:03.370 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnb3VyYXZAZ21haWwuY29tIiwiaWF0IjoxNzU4NTQ2MTEwLCJleHAiOjE3NTg1NDY0MTB9.jBf7d95YSmPOO1QS7hzF9SByA0BV_ZYSGKCKJp_uWswLgVroiUYnax42E6hTEqI1PqvLooMg3zyE2wcisuYurw
+18:32:03.376 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - user name : gourav@gmail.com
+18:32:03.400 TRACE [http-nio-8080-exec-10] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:32:03.402 WARN  [http-nio-8080-exec-10] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+18:32:54.250 TRACE [http-nio-8080-exec-2] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:32:54.293 INFO  [http-nio-8080-exec-2] c.s.irctc.aspects.LoggingAspect - Before Method Execution registerUser
+18:32:55.448 WARN  [http-nio-8080-exec-2] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+18:32:55.448 ERROR [http-nio-8080-exec-2] o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'renu@gmail.com' for key 'users.UK6dotkott2kjsp8vw4d0m25fb7'
+18:33:50.098 TRACE [http-nio-8080-exec-1] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : null
+18:34:06.595 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODU0NjIzMCwiZXhwIjoxNzU4NTQ2NTMwfQ.TgipxAGnW-CECjgH_iBz7lnkXDdWeR2SEoGFzZBUaM6t3_YotYdviN90lLwSrkfKgDGOm3g11bL5X-b_gvdx2w
+18:34:06.600 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - user name : renu@gmail.com
+18:34:06.623 TRACE [http-nio-8080-exec-3] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:34:06.625 WARN  [http-nio-8080-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+18:34:07.964 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Request to the JWT filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW51QGdtYWlsLmNvbSIsImlhdCI6MTc1ODU0NjIzMCwiZXhwIjoxNzU4NTQ2NTMwfQ.TgipxAGnW-CECjgH_iBz7lnkXDdWeR2SEoGFzZBUaM6t3_YotYdviN90lLwSrkfKgDGOm3g11bL5X-b_gvdx2w
+18:34:07.965 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - user name : renu@gmail.com
+18:34:07.972 TRACE [http-nio-8080-exec-4] c.s.i.c.S.JwtAuthenticationFilter - Authentication set in spring security context
+18:34:07.973 WARN  [http-nio-8080-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+18:38:01.615 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m16s509ms).
+19:21:55.680 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m54s71ms).
+19:49:05.462 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m9s784ms).
+20:40:33.212 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m57s436ms).
+21:58:29.120 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m25s382ms).
+22:13:58.138 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s18ms).
+23:19:26.912 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+23:19:26.990 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+23:19:27.040 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:19:27.088 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:19:27.105 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

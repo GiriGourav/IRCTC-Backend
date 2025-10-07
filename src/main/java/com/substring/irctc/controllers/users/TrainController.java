@@ -27,8 +27,8 @@ public class TrainController {
             @RequestBody UserTrainSearchRequest userTrainSearchRequest
             )
     {
-        List<AvailableTrainResponse> availableTrainResponse=trainService.userTrainSearch(userTrainSearchRequest);
-        return new ResponseEntity<>(availableTrainResponse, HttpStatus.OK);
+        List<AvailableTrainResponse> availableTrainResponses=trainService.userTrainSearch(userTrainSearchRequest);
+        return new ResponseEntity<>(availableTrainResponses, HttpStatus.OK);
 
     }
 }
