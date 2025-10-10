@@ -53,12 +53,15 @@ public class AuthController {
         try {
            UsernamePasswordAuthenticationToken authentication= new UsernamePasswordAuthenticationToken(loginRequest.username(), loginRequest.password());
             this.authenticationManager.authenticate(authentication);
+
 //            generate Token
             UserDetails userDetails= userDetailsService.loadUserByUsername(loginRequest.username());
-            String token= jwtHelper.generateToken(userDetails);
+            String token= this.jwtHelper.generateToken(userDetails);
+            String refreshToken=this.jwtHelper.generateRefreshToken(userDetails);
             User user=userRepo.findByEmail(loginRequest.username()).get();
             JwtResponse jwtResponse=new JwtResponse(
                     token,
+                    refreshToken,
                     modelMapper.map(user,UserDto.class)
             );
 //cookie mai token ko bhej sakte ha

@@ -1,6 +1,7 @@
 package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -9,6 +10,11 @@ import java.util.List;
 
 @Entity
 @Table(name = "bookings")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,7 +47,7 @@ public class Booking {
 
     private LocalDateTime createdAt;
 
-    @OneToMany(mappedBy ="booking")
+    @OneToMany(mappedBy ="booking",cascade = CascadeType.ALL)
     private List<BookingPassenger> passengers;
 
     @OneToOne(mappedBy = "booking", cascade = CascadeType.ALL)
