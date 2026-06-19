@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @OpenAPIDefinition(info = @Info(
-        title = "IRCTC Clone API by BackendX",
+        title = "IRCTC Clone API by Gourav Giri",
         version = "1.0.0",
         description = "API documentation for IRCTC project",
         termsOfService = "https://www.irctc.co.in/terms-of-service",

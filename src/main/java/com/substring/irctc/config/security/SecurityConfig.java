@@ -24,6 +24,8 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.springframework.security.authorization.SingleResultAuthorizationManager.permitAll;
+
 @Configuration
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableMethodSecurity

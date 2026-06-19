@@ -139,9 +139,9 @@ public class AuthController {
 
     }
 
-    @GetMapping("/test")
-    @PreAuthorize("hasRole('NORMAL')")
-    public String test() {
-        return "test";
-    }
+//    @GetMapping("/test")
+//    @PreAuthorize("hasRole('ADMIN')")
+//    public String test() {
+//        return "test";
+//    }
 }
