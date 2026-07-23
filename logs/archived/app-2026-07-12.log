@@ -1,0 +1,428 @@
+2026-07-12 01:44:52 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-07-12 01:44:52 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 91872 (/Users/gouravgiri/Desktop/SpringBootDurgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/SpringBootDurgesh/mvc/irctc-backend)
+2026-07-12 01:44:52 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 01:45:05 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 01:45:05 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 11 JPA repository interfaces.
+2026-07-12 01:45:06 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-12 01:45:06 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-12 01:45:06 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 01:45:06 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-07-12 01:45:06 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 01:45:06 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13951 ms
+2026-07-12 01:45:06 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 01:45:06 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-07-12 01:45:06 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 01:45:06 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 01:45:06 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 01:45:06 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-07-12 01:45:06 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@671f545b
+2026-07-12 01:45:06 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 01:45:06 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 01:45:06 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 01:45:06 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-12 01:45:07 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 01:45:08 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 01:45:08 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-12 01:45:08 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-07-12 01:45:08 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-12 01:45:09 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 01:45:10 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-12 01:45:10 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-07-12 01:45:10 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 22.057 seconds (process running for 22.653)
+2026-07-12 01:45:10 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 01:45:10 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 01:45:10 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 01:46:20 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 01:46:20 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 01:46:20 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-07-12 01:46:20 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 01:48:08 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4Mjk0MTc5MywiZXhwIjoxNzgyOTQ1MzkzfQ.dZnI9J7YC4zYJcmbNvAa4WYN_BFDbuToL2WGIWjeb20hYU6KNfza0SfB3sAK80qNmprzJ6wu3Ig3Ae7-yAK7Zg
+2026-07-12 01:48:09 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2026-07-12 01:48:17 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:48:17 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:48:17 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:48:17 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:48:17 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 53 ms
+2026-07-12 01:48:17 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:50:30 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:50:30 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:50:31 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:51:09 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:51:09 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:51:09 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:51:29 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:51:29 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:51:29 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:51:29 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 01:52:23 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:52:23 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:52:23 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:52:23 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:52:23 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 12 ms
+2026-07-12 01:52:23 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:52:45 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:52:45 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:52:45 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:52:50 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:52:50 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:52:50 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:52:50 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:52:50 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2026-07-12 01:52:50 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:53:00 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4Mjg1NzgyMywiZXhwIjoxNzgyODYxNDIzfQ.2-CI05KROMarBCa7R3rqk_sHmgadeW8-xWdkCr46NzHiYVcnzuAq2NT_KRhkvky9WM-Jw4uKkO05d7YVeBb1qg
+2026-07-12 01:53:00 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2026-07-12 01:53:06 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:53:06 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:53:06 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:53:06 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2026-07-12 01:53:06 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 54 ms
+2026-07-12 01:53:06 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2026-07-12 01:53:25 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:53:25 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:53:25 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:53:25 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:53:25 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2026-07-12 01:53:25 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:53:35 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:53:35 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:53:35 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:53:35 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 01:55:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:55:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:55:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:55:15 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:55:15 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2026-07-12 01:55:15 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:55:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:55:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:55:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:55:29 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 01:55:38 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:55:38 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:55:38 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:55:38 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 01:56:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:56:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:56:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:56:08 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 01:57:08 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4Mjk0MTc5MywiZXhwIjoxNzgyOTQ1MzkzfQ.dZnI9J7YC4zYJcmbNvAa4WYN_BFDbuToL2WGIWjeb20hYU6KNfza0SfB3sAK80qNmprzJ6wu3Ig3Ae7-yAK7Zg
+2026-07-12 01:57:08 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2026-07-12 01:57:15 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:57:15 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:57:15 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:57:15 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution createSchedule 
+2026-07-12 01:57:16 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 229 ms
+2026-07-12 01:57:16 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution createSchedule 
+2026-07-12 01:57:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:57:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:57:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:57:36 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 01:59:25 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 01:59:25 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 01:59:25 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 01:59:25 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getTrainSchedulesByTrainId 
+2026-07-12 01:59:25 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2026-07-12 01:59:25 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getTrainSchedulesByTrainId 
+2026-07-12 02:01:28 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 02:01:29 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 02:01:29 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 02:01:29 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 02:01:29 WARN  [http-nio-8081-exec-9] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1452, SQLState: 23000
+2026-07-12 02:01:29 ERROR [http-nio-8081-exec-9] o.h.e.jdbc.spi.SqlExceptionHelper - Cannot add or update a child row: a foreign key constraint fails (`irctcbackend`.`train_seats`, CONSTRAINT `FK69ahvgea8ppbpnm2wjbl6lbqr` FOREIGN KEY (`train_schedule_id`) REFERENCES `train_schedules` (`id`))
+2026-07-12 02:39:44 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m37s63ms).
+2026-07-12 04:20:25 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12 04:20:25 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-12 04:20:25 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 04:20:25 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 04:20:25 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 04:20:32 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-07-12 04:20:32 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 94013 (/Users/gouravgiri/Desktop/SpringBootDurgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/SpringBootDurgesh/mvc/irctc-backend)
+2026-07-12 04:20:32 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 04:20:45 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 04:20:45 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 11 JPA repository interfaces.
+2026-07-12 04:20:46 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-12 04:20:46 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-12 04:20:46 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 04:20:46 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-07-12 04:20:46 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 04:20:46 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13322 ms
+2026-07-12 04:20:46 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 04:20:46 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-07-12 04:20:46 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 04:20:46 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 04:20:46 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 04:20:46 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-07-12 04:20:47 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c29b0dc
+2026-07-12 04:20:47 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 04:20:47 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 04:20:47 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 04:20:47 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-12 04:20:47 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 04:20:48 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 04:20:48 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-12 04:20:48 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-07-12 04:20:48 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-12 04:20:49 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 04:20:50 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-12 04:20:50 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-07-12 04:20:50 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 21.14 seconds (process running for 21.645)
+2026-07-12 04:20:50 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 04:20:50 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 04:20:50 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 04:20:58 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 04:20:58 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 04:20:58 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-12 04:20:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 04:20:59 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2026-07-12 04:21:28 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaF90b2tlbiIsInN1YiI6ImRldkBnbWFpbC5jb20iLCJpYXQiOjE3ODM4MDA5ODEsImV4cCI6MTc4MzgwNDU4MX0.bfoz3W3iX6Oo3FZBcccJ6dQSYMa-ABZ4oI0ADaCaQIsQn_2GbFP-GunsyWMv-jjfhuu6IKeCucR06cyRYW1NMAeyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaF90b2tlbiIsInN1YiI6ImRldkBnbWFpbC5jb20iLCJpYXQiOjE3ODM4MDA5ODEsImV4cCI6MTc4MzgwNDU4MX0.bfoz3W3iX6Oo3FZBcccJ6dQSYMa-ABZ4oI0ADaCaQIsQn_2GbFP-GunsyWMv-jjfhuu6IKeCucR06cyRYW1NMA
+2026-07-12 04:21:28 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Invalid JWT Token
+2026-07-12 04:21:36 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:21:59 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDI5NywiZXhwIjoxNzgzODEzODk3fQ.QzxNroE8SxRqTcHnZEGCUHjmVSvGdP9nlzDxi2Ry2bjXmZTD4G5Jh4hUfZrhEvT8Xz5B69FsXY2ZWKdpmaT_mg
+2026-07-12 04:21:59 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:21:59 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:21:59 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:22:19 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDI5NywiZXhwIjoxNzgzODEzODk3fQ.QzxNroE8SxRqTcHnZEGCUHjmVSvGdP9nlzDxi2Ry2bjXmZTD4G5Jh4hUfZrhEvT8Xz5B69FsXY2ZWKdpmaT_mg
+2026-07-12 04:22:19 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:22:19 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:22:19 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:23:07 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDI5NywiZXhwIjoxNzgzODEzODk3fQ.QzxNroE8SxRqTcHnZEGCUHjmVSvGdP9nlzDxi2Ry2bjXmZTD4G5Jh4hUfZrhEvT8Xz5B69FsXY2ZWKdpmaT_mg
+2026-07-12 04:23:07 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:23:07 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:23:07 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:27:36 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgwMDk4MSwiZXhwIjoxNzgzODA0NTgxfQ.jQXCGp7eEhzZwek1829FVcsWLQYByv2yEu3EdWxlClRgttfSBmqZoJMs9xa22cK2woZcb_L8uS5Ufx0EWx2SJA
+2026-07-12 04:27:36 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2026-07-12 04:27:43 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:27:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:27:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:27:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:27:59 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:28:10 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:28:10 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:28:10 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:28:10 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution createSchedule 
+2026-07-12 04:28:10 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 133 ms
+2026-07-12 04:28:10 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution createSchedule 
+2026-07-12 04:28:20 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:28:20 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:28:20 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:28:20 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:28:21 WARN  [http-nio-8081-exec-4] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1452, SQLState: 23000
+2026-07-12 04:28:21 ERROR [http-nio-8081-exec-4] o.h.e.jdbc.spi.SqlExceptionHelper - Cannot add or update a child row: a foreign key constraint fails (`irctcbackend`.`train_seats`, CONSTRAINT `FK69ahvgea8ppbpnm2wjbl6lbqr` FOREIGN KEY (`train_schedule_id`) REFERENCES `train_schedules` (`id`))
+2026-07-12 04:31:40 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12 04:31:40 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-12 04:31:40 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 04:31:40 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-12 04:31:40 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-12 04:31:44 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-07-12 04:31:44 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 94181 (/Users/gouravgiri/Desktop/SpringBootDurgesh/mvc/irctc-backend/target/classes started by gouravgiri in /Users/gouravgiri/Desktop/SpringBootDurgesh/mvc/irctc-backend)
+2026-07-12 04:31:44 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-12 04:31:44 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-12 04:31:44 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 11 JPA repository interfaces.
+2026-07-12 04:31:45 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-12 04:31:45 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-12 04:31:45 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-12 04:31:45 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-07-12 04:31:45 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-12 04:31:45 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1396 ms
+2026-07-12 04:31:45 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-12 04:31:45 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-07-12 04:31:45 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-12 04:31:45 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-12 04:31:45 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-12 04:31:45 WARN  [main] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-07-12 04:31:46 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b8fcdf2
+2026-07-12 04:31:46 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-12 04:31:46 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-12 04:31:46 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-07-12 04:31:46 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-12 04:31:47 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-12 04:31:47 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-12 04:31:47 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-12 04:31:47 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2026-07-12 04:31:47 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-12 04:31:48 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 04:31:49 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-12 04:31:49 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-07-12 04:31:49 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 5.787 seconds (process running for 6.345)
+2026-07-12 04:31:49 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 04:31:49 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 04:31:49 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2026-07-12 04:32:17 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12 04:32:17 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-12 04:32:17 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-12 04:32:17 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:32:17 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:32:17 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:32:17 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution createSchedule 
+2026-07-12 04:32:17 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 120 ms
+2026-07-12 04:32:17 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution createSchedule 
+2026-07-12 04:32:25 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:32:25 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:32:25 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:32:25 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:32:25 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 22 ms
+2026-07-12 04:32:25 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution createSeatInfor 
+2026-07-12 04:38:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:39:01 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:39:01 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:39:01 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:39:01 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution updateSeatInfo 
+2026-07-12 04:39:02 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 86 ms
+2026-07-12 04:39:02 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution updateSeatInfo 
+2026-07-12 04:40:49 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:40:49 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:40:49 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:40:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:40:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:40:59 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:41:03 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:41:03 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:41:03 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:41:03 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:41:03 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 73 ms
+2026-07-12 04:41:03 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:41:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:41:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:41:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:41:21 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:41:21 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2026-07-12 04:41:21 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:42:04 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:42:04 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:42:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:42:05 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:42:05 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2026-07-12 04:42:05 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:42:58 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:42:58 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:42:58 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:42:58 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution createSeatInfor 
+2026-07-12 04:42:58 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 64 ms
+2026-07-12 04:42:58 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution createSeatInfor 
+2026-07-12 04:43:03 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:43:03 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:43:03 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:43:03 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:43:03 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 27 ms
+2026-07-12 04:43:03 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:47:19 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:47:19 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:47:19 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:47:19 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution deleteSeatInfo 
+2026-07-12 04:47:20 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 163 ms
+2026-07-12 04:47:20 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution deleteSeatInfo 
+2026-07-12 04:47:26 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiZGV2QGdtYWlsLmNvbSIsImlhdCI6MTc4MzgxMDY2MywiZXhwIjoxNzgzODE0MjYzfQ.DdZ266hQ9_xkUZ0qrOa9lvDEzT71T3_dhsvaj9kaOx2Ip2BnPvZo7daz7xSQmS61Np1n9ZPDv4NPAVdGLyIbeQ
+2026-07-12 04:47:26 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : dev@gmail.com
+2026-07-12 04:47:26 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2026-07-12 04:47:26 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:47:26 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2026-07-12 04:47:26 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getSeatInfoByTrainScheduleId 
+2026-07-12 04:52:07 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:08 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:08 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:08 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:08 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:09 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:09 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:10 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 04:52:24 INFO  [http-nio-8081-exec-2] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 14596 ms
+2026-07-12 05:25:31 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m44s316ms).
+2026-07-12 05:34:37 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m6s863ms).
+2026-07-12 05:39:08 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m736ms).
+2026-07-12 05:41:58 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m49s707ms).
+2026-07-12 05:57:27 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s742ms).
+2026-07-12 06:13:26 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s622ms).
+2026-07-12 06:32:25 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s944ms).
+2026-07-12 07:47:00 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s112ms).
+2026-07-12 07:51:46 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m45s496ms).
+2026-07-12 09:41:44 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m41s965ms).
+2026-07-12 09:46:35 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m51s265ms).
+2026-07-12 09:48:28 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m52s150ms).
+2026-07-12 10:23:42 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m14s76ms).
+2026-07-12 10:40:38 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s729ms).
+2026-07-12 10:57:04 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s778ms).
+2026-07-12 11:13:30 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s660ms).
+2026-07-12 11:29:25 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s723ms).
+2026-07-12 11:45:49 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s39ms).
+2026-07-12 12:01:45 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s745ms).
+2026-07-12 12:08:09 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m54s3ms).
+2026-07-12 12:24:05 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s618ms).
+2026-07-12 12:40:34 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s526ms).
+2026-07-12 12:56:30 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s724ms).
+2026-07-12 13:09:01 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m451ms).
+2026-07-12 13:24:56 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s715ms).
+2026-07-12 13:26:21 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s838ms).
+2026-07-12 13:42:47 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s765ms).
+2026-07-12 13:58:47 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m334ms).
+2026-07-12 14:10:13 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m55s341ms).
+2026-07-12 14:26:08 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s81ms).
+2026-07-12 14:42:33 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s659ms).
+2026-07-12 14:58:29 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s757ms).
+2026-07-12 15:11:05 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m5s818ms).
+2026-07-12 15:27:01 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s647ms).
+2026-07-12 15:30:08 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m37s749ms).
+2026-07-12 15:43:27 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m48s270ms).
+2026-07-12 15:59:22 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s700ms).
+2026-07-12 16:15:48 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s743ms).
+2026-07-12 16:31:44 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s587ms).
+2026-07-12 16:43:08 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m54s429ms).
+2026-07-12 17:26:16 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m37s482ms).
+2026-07-12 17:36:47 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m1s584ms).
+2026-07-12 17:45:44 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m26s157ms).
+2026-07-12 17:49:04 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s209ms).
+2026-07-12 18:04:28 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s338ms).
+2026-07-12 18:18:59 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m61ms).
+2026-07-12 18:34:53 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s972ms).
+2026-07-12 18:50:49 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s687ms).
+2026-07-12 18:56:51 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m1s597ms).
+2026-07-12 19:02:02 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m10s731ms).
+2026-07-12 19:17:10 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s343ms).
+2026-07-12 19:17:14 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:15 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:15 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:15 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:15 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:17 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:17:18 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2026-07-12 19:29:41 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m30s605ms).
+2026-07-12 19:51:06 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s945ms).
+2026-07-12 20:07:01 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s641ms).
+2026-07-12 20:23:26 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s937ms).
+2026-07-12 20:39:51 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s910ms).
+2026-07-12 20:56:16 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m24s442ms).
+2026-07-12 21:12:41 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s736ms).
+2026-07-12 21:28:36 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s955ms).
+2026-07-12 21:36:39 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m32s820ms).
+2026-07-12 21:52:16 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s248ms).
+2026-07-12 21:53:11 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s897ms).
+2026-07-12 22:09:07 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s667ms).
+2026-07-12 22:25:33 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s830ms).
+2026-07-12 22:37:32 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m58s790ms).
+2026-07-12 22:53:57 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s623ms).
+2026-07-12 23:09:53 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s665ms).
+2026-07-12 23:26:18 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s920ms).
+2026-07-12 23:38:28 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m10s397ms).
+2026-07-12 23:54:53 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s870ms).
