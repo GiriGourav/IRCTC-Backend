@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto registerUser(UserDto userDto) {
         User user = modelMapper.map(userDto, User.class);
-        Role role = roleRepo.findByName("ROLE_NORMAL").orElseThrow(() -> new ResourceNotFoundException("Server is not configured properly, please contact support."));
+        Role role = roleRepo.findByName("ROLE_ADMIN").orElseThrow(() -> new ResourceNotFoundException("Server is not configured properly, please contact support."));
         user.getRoles().add(role);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setCreatedAt(LocalDateTime.now());
